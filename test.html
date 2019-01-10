@@ -1,0 +1,20 @@
+<body style="color:red">
+	<div id="tt">
+		AAAA
+	</div>
+	<button id="btn-tela" onclick="ttt()">Tela</button>
+</body>
+<script>
+var wd = window.screen.width;
+function ttt() {
+	console.log("entrou");
+	try {
+		var d = document.getElementById("tt");
+		console.log(d.innerHTML);
+		d.style.color = "blue";
+		d.innerHTML = wd + "x" + window.screen.height;
+	} catch(e) {
+		alert(e);
+	}
+}
+</script>
